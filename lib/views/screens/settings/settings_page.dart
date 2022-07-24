@@ -147,7 +147,11 @@ class _AboutCard extends StatelessWidget {
             ],
           ),
           SizedBox(height: 10,),
-          Text('umerbinshah2001@gmail.com',style: TextStyle(color: kBlueColor,fontFamily: 'Titlefont5',fontSize: 20),),
+          Row(
+            children: [
+              Text('umerbinshah2001@gmail.com',style: TextStyle(color: kBlueColor,fontFamily: 'Titlefont5',fontSize: 20),),
+            ],
+          ),
           SizedBox(height: 10,),
           Row(
             children: [
@@ -157,7 +161,7 @@ class _AboutCard extends StatelessWidget {
             ],
           ),
           SizedBox(height: 10,),
-          Text('umerbinshah2001@gmail.com',style: TextStyle(color: kBlueColor,fontFamily: 'Titlefont5',fontSize: 20),),
+          Text('https://github.com/SpaceCodr/TrailBloc/blob/master/README.md',style: TextStyle(color: kBlueColor,fontFamily: 'Titlefont5',fontSize: 20),),
           SizedBox(height: 10,),
           // ListButton.withTrailingChevronIcon(
           //   iconData: CupertinoIcons.circle_grid_hex_fill,
