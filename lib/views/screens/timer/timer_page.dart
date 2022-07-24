@@ -147,11 +147,9 @@ class _Body extends StatelessWidget {
         _TaskCardBody(),
         _TimerBody(),
         _TimerActionButton(),
-        Align(alignment: Alignment.topCenter,child: CupertinoButton(child: Padding(padding: EdgeInsets.all(140),
-            child:Icon(Icons.refresh_rounded,color: kOrangeColor,size: 40,),
-        ),
-            onPressed: () => Phoenix.rebirth(context),
-        )),
+        Padding(padding: EdgeInsets.all(140),child:Align(alignment: Alignment.topCenter,child: CupertinoButton(child: Icon(Icons.refresh_rounded,color: kOrangeColor,size: 40,),
+          onPressed: () => Phoenix.rebirth(context),
+        ))),
       ],
     );
   }
