@@ -1,5 +1,5 @@
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:pomodoro_timer_task_management/models/project.dart';
+import 'package:TrailApp/models/project.dart';
 
 class ProjectService {
   final String boxName;

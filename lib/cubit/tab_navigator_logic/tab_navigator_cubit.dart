@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:pomodoro_timer_task_management/routes/main_navigation.dart';
+import 'package:TrailApp/routes/main_navigation.dart';
 
 part 'tab_navigator_state.dart';
 

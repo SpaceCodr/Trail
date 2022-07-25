@@ -1,10 +1,10 @@
 import 'package:bloc/bloc.dart';
 import 'package:hive/hive.dart';
-import 'package:pomodoro_timer_task_management/cubit/timer_logic/timer_cubit.dart';
-import 'package:pomodoro_timer_task_management/cubit/timer_logic/timer_event.dart';
-import 'package:pomodoro_timer_task_management/models/task.dart';
-import 'package:pomodoro_timer_task_management/models/timer_task.dart';
-import 'package:pomodoro_timer_task_management/services/task_service.dart';
+import 'package:TrailApp/cubit/timer_logic/timer_cubit.dart';
+import 'package:TrailApp/cubit/timer_logic/timer_event.dart';
+import 'package:TrailApp/models/task.dart';
+import 'package:TrailApp/models/timer_task.dart';
+import 'package:TrailApp/services/task_service.dart';
 
 import '../../core/values/keys.dart';
 

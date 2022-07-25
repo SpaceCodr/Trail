@@ -2,7 +2,7 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter/foundation.dart';
 import 'package:hive/hive.dart';
 import 'package:just_audio/just_audio.dart';
-import 'package:pomodoro_timer_task_management/core/values/keys.dart';
+import 'package:TrailApp/core/values/keys.dart';
 
 part 'notification_sample_picker_state.dart';
 
@@ -47,9 +47,7 @@ class NotificationSamplePickerCubit
 
   void _playSample(int index) async {
     String url = 'android/app/src/main/res/raw/sample${index + 1}.wav';
-
-    await _player.setUrl(url);
-
+    await _player.setAsset(url);
     _player.play();
   }
 

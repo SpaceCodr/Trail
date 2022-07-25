@@ -1,20 +1,20 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pomodoro_timer_task_management/components/number_picker.dart';
-import 'package:pomodoro_timer_task_management/components/popup_modal.dart';
-import 'package:pomodoro_timer_task_management/core/values/colors.dart';
-import 'package:pomodoro_timer_task_management/core/values/constants.dart';
-import 'package:pomodoro_timer_task_management/cubit/project_detail_form_logic/project_detail_form_cubit.dart';
-import 'package:pomodoro_timer_task_management/models/pomodoro_timer.dart';
-import 'package:pomodoro_timer_task_management/models/task.dart';
-import 'package:pomodoro_timer_task_management/models/task_priority.dart';
-import 'package:pomodoro_timer_task_management/views/widgets/action_button.dart';
-import 'package:pomodoro_timer_task_management/views/widgets/back_button.dart';
-import 'package:pomodoro_timer_task_management/views/widgets/card_title.dart';
-import 'package:pomodoro_timer_task_management/views/widgets/list_button.dart';
-import 'package:pomodoro_timer_task_management/views/widgets/page_title.dart';
-import 'package:pomodoro_timer_task_management/views/widgets/rounded_card.dart';
+import 'package:TrailApp/components/number_picker.dart';
+import 'package:TrailApp/components/popup_modal.dart';
+import 'package:TrailApp/core/values/colors.dart';
+import 'package:TrailApp/core/values/constants.dart';
+import 'package:TrailApp/cubit/project_detail_form_logic/project_detail_form_cubit.dart';
+import 'package:TrailApp/models/pomodoro_timer.dart';
+import 'package:TrailApp/models/task.dart';
+import 'package:TrailApp/models/task_priority.dart';
+import 'package:TrailApp/views/widgets/action_button.dart';
+import 'package:TrailApp/views/widgets/back_button.dart';
+import 'package:TrailApp/views/widgets/card_title.dart';
+import 'package:TrailApp/views/widgets/list_button.dart';
+import 'package:TrailApp/views/widgets/page_title.dart';
+import 'package:TrailApp/views/widgets/rounded_card.dart';
 
 class ProjectDetailFormPage extends StatelessWidget {
   const ProjectDetailFormPage({

@@ -1,13 +1,14 @@
+import 'package:TrailApp/views/screens/intro/intro.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:pomodoro_timer_task_management/views/screens/settings/notification_sample_picker_page.dart';
-import 'package:pomodoro_timer_task_management/views/screens/settings/pomodoro_timer_settings_page.dart';
+import 'package:TrailApp/views/screens/settings/notification_sample_picker_page.dart';
+import 'package:TrailApp/views/screens/settings/pomodoro_timer_settings_page.dart';
 
 abstract class SettingsNavigationRoutes {
   SettingsNavigationRoutes._();
 
   static const String timerSettings = 'timer_settings';
-  static const String themePicker = 'theme_picker';
   static const String notificationSamplePicker = 'notification_sample_picker';
+  static const String introViewer = 'nintroduction_viwer';
 }
 
 abstract class SettingsNavigation {
@@ -25,6 +26,10 @@ abstract class SettingsNavigation {
 
         return CupertinoPageRoute(
           builder: (_) => NotificationSamplePickerPage(sampleKey: sampleKey),
+        );
+      case SettingsNavigationRoutes.introViewer:
+        return CupertinoPageRoute(
+          builder: (_) => const IntroductionScreens(),
         );
       default:
         return CupertinoPageRoute(

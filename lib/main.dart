@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:pomodoro_timer_task_management/core/values/constants.dart';
-import 'package:pomodoro_timer_task_management/core/hive_adapters.dart';
+import 'package:TrailApp/core/values/constants.dart';
+import 'package:TrailApp/core/hive_adapters.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
-import 'package:pomodoro_timer_task_management/core/hive_default_data.dart';
-import 'package:pomodoro_timer_task_management/cubit/task_work_logic/task_work_cubit.dart';
-import 'package:pomodoro_timer_task_management/cubit/timer_logic/timer_cubit.dart';
-import 'package:pomodoro_timer_task_management/services/notification_service.dart';
-import 'package:pomodoro_timer_task_management/views/screens/tab_navigator/tab_navigator.dart';
+import 'package:TrailApp/core/hive_default_data.dart';
+import 'package:TrailApp/cubit/task_work_logic/task_work_cubit.dart';
+import 'package:TrailApp/cubit/timer_logic/timer_cubit.dart';
+import 'package:TrailApp/services/notification_service.dart';
+import 'package:TrailApp/views/screens/tab_navigator/tab_navigator.dart';
 
 void main() async {
   final widgetsBinding = WidgetsFlutterBinding.ensureInitialized();

@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:pomodoro_timer_task_management/core/values/colors.dart';
+import 'package:TrailApp/core/values/colors.dart';
 
 class Back_Button extends StatelessWidget {
   const Back_Button({

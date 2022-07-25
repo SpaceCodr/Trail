@@ -1,9 +1,9 @@
 import 'package:hive_flutter/adapters.dart';
-import 'package:pomodoro_timer_task_management/core/extensions/color.dart';
-import 'package:pomodoro_timer_task_management/core/values/colors.dart';
-import 'package:pomodoro_timer_task_management/core/values/keys.dart';
-import 'package:pomodoro_timer_task_management/models/pomodoro_timer.dart';
-import 'package:pomodoro_timer_task_management/models/project.dart';
+import 'package:TrailApp/core/extensions/color.dart';
+import 'package:TrailApp/core/values/colors.dart';
+import 'package:TrailApp/core/values/keys.dart';
+import 'package:TrailApp/models/pomodoro_timer.dart';
+import 'package:TrailApp/models/project.dart';
 
 final _projects = [
   {

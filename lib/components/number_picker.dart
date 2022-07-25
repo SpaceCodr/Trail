@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:pomodoro_timer_task_management/core/values/colors.dart';
+import 'package:TrailApp/core/values/colors.dart';
 
 Future<int> openNumberPickerDialog({
   required BuildContext context,

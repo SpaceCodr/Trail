@@ -1,15 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pomodoro_timer_task_management/core/values/colors.dart';
-import 'package:pomodoro_timer_task_management/core/values/constants.dart';
-import 'package:pomodoro_timer_task_management/core/values/keys.dart';
-import 'package:pomodoro_timer_task_management/cubit/settings_logic/settings_cubit.dart';
-import 'package:pomodoro_timer_task_management/routes/settings_navigation.dart';
-import 'package:pomodoro_timer_task_management/views/widgets/card_title.dart';
-import 'package:pomodoro_timer_task_management/views/widgets/list_button.dart';
-import 'package:pomodoro_timer_task_management/views/widgets/page_title.dart';
-import 'package:pomodoro_timer_task_management/views/widgets/rounded_card.dart';
+import 'package:TrailApp/core/values/colors.dart';
+import 'package:TrailApp/core/values/constants.dart';
+import 'package:TrailApp/core/values/keys.dart';
+import 'package:TrailApp/cubit/settings_logic/settings_cubit.dart';
+import 'package:TrailApp/routes/settings_navigation.dart';
+import 'package:TrailApp/views/widgets/card_title.dart';
+import 'package:TrailApp/views/widgets/list_button.dart';
+import 'package:TrailApp/views/widgets/page_title.dart';
+import 'package:TrailApp/views/widgets/rounded_card.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({Key? key}) : super(key: key);
@@ -127,62 +128,49 @@ class _AboutCardTitle extends StatelessWidget {
     return const CardTitle(title: 'About Us');
   }
 }
-
 class _AboutCard extends StatelessWidget {
   const _AboutCard({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
-    // const double itemHeight = 45;
+     const double itemHeight = 45;
 
     return RoundedCard(
       padding: const EdgeInsets.symmetric(horizontal: kDefaultMargin),
       child: Column(
         children: [
-          Row(
-            children: [
-              Text('Help and Feedback',
-              style: TextStyle(fontFamily: 'Titlefont3',fontSize: 18),
-              ),
-            ],
+          ListButton.withTrailingChevronIcon(
+            iconData:Icons.library_books_outlined,
+            title: 'What\'s up',
+            onPressed: () {
+              Navigator.of(context)
+                  .pushNamed(SettingsNavigationRoutes.introViewer);
+            },
+            height: itemHeight,
           ),
-          SizedBox(height: 10,),
-          Row(
-            children: [
-              Text('umerbinshah2001@gmail.com',style: TextStyle(color: kBlueColor,fontFamily: 'Titlefont5',fontSize: 20),),
-            ],
+          ListButton.withTrailingChevronIcon(
+              iconData:Icons.live_help_outlined,
+              title: 'Help and Feedback',
+              onPressed: _launchEmail,
+              height: itemHeight,
           ),
-          SizedBox(height: 10,),
-          Row(
-            children: [
-              Text('Github',
-                style: TextStyle(fontFamily: 'Titlefont3',fontSize: 18),
-              ),
-            ],
-          ),
-          SizedBox(height: 10,),
-          Text('https://github.com/SpaceCodr/TrailBloc',style: TextStyle(color: kBlueColor,fontFamily: 'Titlefont5',fontSize: 20),),
-          SizedBox(height: 10,),
-          // ListButton.withTrailingChevronIcon(
-          //   iconData: CupertinoIcons.circle_grid_hex_fill,
-          //   title: 'Theme',
-          //   onPressed: () {
-          //     Navigator.of(context)
-          //         .pushNamed(SettingsNavigationRoutes.themePicker);
-          //   },
-          //   height: itemHeight,
-          // ),
-          // ListButton.withTrailingChevronIcon(
-          //   iconData: CupertinoIcons.alarm,
-          //   title: 'Timer',
-          //   onPressed: () {
-          //     Navigator.of(context)
-          //         .pushNamed(SettingsNavigationRoutes.timerThemePicker);
-          //   },
-          //   height: itemHeight,
-          // ),
+          ListButton.withTrailingChevronIcon(
+              iconData:Icons.logo_dev_rounded,
+              title: 'GitHub',
+              onPressed: _launchUrl,
+              height: itemHeight,
+          )
         ],
       ),
     );
+  }
+  void _launchEmail() async {
+    final Uri _emailUri= Uri(scheme: 'mailto',path: 'umerbinshah2001@gmail.com');
+    launchUrl(_emailUri);
+  }
+  void _launchUrl() async {
+    final Uri _url = Uri.parse('https://github.com/SpaceCodr/TrailBloc2');
+    if (!await launchUrl(_url)) {
+      throw 'Could not launch$_url';
+    }
   }
 }

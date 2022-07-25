@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:hive_flutter/adapters.dart';
 
-import 'package:pomodoro_timer_task_management/models/task.dart';
+import 'package:TrailApp/models/task.dart';
 
 part 'project.g.dart';
 

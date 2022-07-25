@@ -1,8 +1,8 @@
 import 'package:bloc/bloc.dart';
-import 'package:pomodoro_timer_task_management/models/pomodoro_timer.dart';
-import 'package:pomodoro_timer_task_management/models/task.dart';
-import 'package:pomodoro_timer_task_management/models/task_priority.dart';
-import 'package:pomodoro_timer_task_management/services/task_service.dart';
+import 'package:TrailApp/models/pomodoro_timer.dart';
+import 'package:TrailApp/models/task.dart';
+import 'package:TrailApp/models/task_priority.dart';
+import 'package:TrailApp/services/task_service.dart';
 
 part 'project_detail_form_state.dart';
 

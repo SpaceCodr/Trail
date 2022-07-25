@@ -1,9 +1,9 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/foundation.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:pomodoro_timer_task_management/models/project.dart';
-import 'package:pomodoro_timer_task_management/models/task.dart';
-import 'package:pomodoro_timer_task_management/services/task_service.dart';
+import 'package:TrailApp/models/project.dart';
+import 'package:TrailApp/models/task.dart';
+import 'package:TrailApp/services/task_service.dart';
 
 part 'project_detail_state.dart';
 

@@ -1,8 +1,8 @@
 import 'package:bloc/bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:pomodoro_timer_task_management/core/values/keys.dart';
-import 'package:pomodoro_timer_task_management/models/project.dart';
-import 'package:pomodoro_timer_task_management/repositorys/project_repository.dart';
+import 'package:TrailApp/core/values/keys.dart';
+import 'package:TrailApp/models/project.dart';
+import 'package:TrailApp/repositorys/project_repository.dart';
 
 part 'project_state.dart';
 

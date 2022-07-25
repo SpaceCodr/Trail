@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:pomodoro_timer_task_management/core/values/colors.dart';
-import 'package:pomodoro_timer_task_management/core/values/constants.dart';
+import 'package:TrailApp/core/values/colors.dart';
+import 'package:TrailApp/core/values/constants.dart';
 
 class ListButton extends StatelessWidget {
   const ListButton({

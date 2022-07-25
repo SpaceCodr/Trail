@@ -1,6 +1,6 @@
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:pomodoro_timer_task_management/models/pomodoro_timer.dart';
-import 'package:pomodoro_timer_task_management/models/task_priority.dart';
+import 'package:TrailApp/models/pomodoro_timer.dart';
+import 'package:TrailApp/models/task_priority.dart';
 
 part 'task.g.dart';
 

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:pomodoro_timer_task_management/core/values/colors.dart';
-import 'package:pomodoro_timer_task_management/core/values/constants.dart';
+import 'package:TrailApp/core/values/colors.dart';
+import 'package:TrailApp/core/values/constants.dart';
 
 class RoundedCard extends StatelessWidget {
   const RoundedCard({
@@ -38,7 +38,7 @@ class RoundedCard extends StatelessWidget {
       padding: padding ?? const EdgeInsets.all(kDefaultMargin),
       margin: margin ?? const EdgeInsets.only(bottom: kDefaultMargin * 1.2),
       decoration: decoration ?? BoxDecoration(
-        color: Colors.white,
+        color: kWhiteColor,
         borderRadius: BorderRadius.circular(kDefaultRadius),
       ),
       child: child,

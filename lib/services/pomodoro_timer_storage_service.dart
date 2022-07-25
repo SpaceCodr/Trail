@@ -1,6 +1,6 @@
 import 'package:hive/hive.dart';
-import 'package:pomodoro_timer_task_management/core/values/keys.dart';
-import 'package:pomodoro_timer_task_management/models/pomodoro_timer.dart';
+import 'package:TrailApp/core/values/keys.dart';
+import 'package:TrailApp/models/pomodoro_timer.dart';
 
 class PomodoroTimerStorageService {
   late final Box<PomodoroTimer> _box;

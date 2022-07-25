@@ -1,4 +1,4 @@
-import 'package:pomodoro_timer_task_management/cubit/timer_logic/timer_cubit.dart';
+import 'package:TrailApp/cubit/timer_logic/timer_cubit.dart';
 
 abstract class TimerEvent {}
 

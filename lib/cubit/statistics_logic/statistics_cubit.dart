@@ -1,8 +1,8 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/foundation.dart';
-import 'package:pomodoro_timer_task_management/models/project.dart';
-import 'package:pomodoro_timer_task_management/models/task.dart';
-import 'package:pomodoro_timer_task_management/repositorys/project_repository.dart';
+import 'package:TrailApp/models/project.dart';
+import 'package:TrailApp/models/task.dart';
+import 'package:TrailApp/repositorys/project_repository.dart';
 
 part 'statistics_state.dart';
 

@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:pomodoro_timer_task_management/core/values/colors.dart';
+import 'package:TrailApp/core/values/colors.dart';
 
 part 'task_priority.g.dart';
 

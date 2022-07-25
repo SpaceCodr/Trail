@@ -1,10 +1,10 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:pomodoro_timer_task_management/core/ticker.dart';
-import 'package:pomodoro_timer_task_management/cubit/timer_logic/timer_event.dart';
-import 'package:pomodoro_timer_task_management/models/pomodoro_timer.dart';
-import 'package:pomodoro_timer_task_management/services/pomodoro_timer_storage_service.dart';
+import 'package:TrailApp/core/ticker.dart';
+import 'package:TrailApp/cubit/timer_logic/timer_event.dart';
+import 'package:TrailApp/models/pomodoro_timer.dart';
+import 'package:TrailApp/services/pomodoro_timer_storage_service.dart';
 
 part 'timer_state.dart';
 

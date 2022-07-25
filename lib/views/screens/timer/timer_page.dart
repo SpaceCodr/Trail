@@ -3,19 +3,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:pomodoro_timer_task_management/components/popup_modal.dart';
-import 'package:pomodoro_timer_task_management/core/values/colors.dart';
-import 'package:pomodoro_timer_task_management/core/values/constants.dart';
-import 'package:pomodoro_timer_task_management/core/values/keys.dart';
-import 'package:pomodoro_timer_task_management/cubit/task_work_logic/task_work_cubit.dart';
-import 'package:pomodoro_timer_task_management/cubit/timer_logic/timer_cubit.dart';
-import 'package:pomodoro_timer_task_management/cubit/timer_logic/timer_event.dart';
-//import 'package:pomodoro_timer_task_management/cubit/timer_theme_switcher_logic/timer_theme_switcher_cubit.dart';
-import 'package:pomodoro_timer_task_management/models/task.dart';
-import 'package:pomodoro_timer_task_management/models/task_priority.dart';
-import 'package:pomodoro_timer_task_management/services/notification_service.dart';
-import 'package:pomodoro_timer_task_management/themes/timer_slider_themes.dart';
-import 'package:pomodoro_timer_task_management/views/widgets/action_button.dart';
+import 'package:TrailApp/components/popup_modal.dart';
+import 'package:TrailApp/core/values/colors.dart';
+import 'package:TrailApp/core/values/constants.dart';
+import 'package:TrailApp/core/values/keys.dart';
+import 'package:TrailApp/cubit/task_work_logic/task_work_cubit.dart';
+import 'package:TrailApp/cubit/timer_logic/timer_cubit.dart';
+import 'package:TrailApp/cubit/timer_logic/timer_event.dart';
+import 'package:TrailApp/models/task.dart';
+import 'package:TrailApp/models/task_priority.dart';
+import 'package:TrailApp/services/notification_service.dart';
+import 'package:TrailApp/themes/timer_slider_themes.dart';
+import 'package:TrailApp/views/widgets/action_button.dart';
 import 'dart:io' show Platform;
 
 class TimerPage extends StatefulWidget {
@@ -32,6 +31,7 @@ class _TimerPageState extends State<TimerPage> {
     final timerCubit = context.read<TimerCubit>();
     final taskWorkCubit = context.read<TaskWorkCubit>();
     final task = taskWorkCubit.state.task;
+
 
     if (task != null) {
       timerCubit.setPomodoroTimer(task.pomodoroTimer);
@@ -103,7 +103,6 @@ class __NotificationServiceState extends State<_NotificationService> {
 
   void _updateSounds() async {
     final box = await Hive.openBox<String?>(kNotificationSampleBox);
-
     _soundOfWorkEnd = box.get(kWorkEndKey);
     _soundOfBreakEnd = box.get(kBreakEndKey);
   }
@@ -357,7 +356,7 @@ class _TimerSlider extends StatelessWidget {
         child: getTimerWidget(
           color: Colors.white,
           value: 1 - value,
-          widgetIndex: 2,//timerWidgetIndex,
+          widgetIndex: 0,//timerWidgetIndex,
         ),
       ),
     );

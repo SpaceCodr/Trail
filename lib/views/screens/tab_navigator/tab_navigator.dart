@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:pomodoro_timer_task_management/core/values/colors.dart';
-import 'package:pomodoro_timer_task_management/routes/main_navigation.dart';
-import 'package:pomodoro_timer_task_management/routes/settings_navigation.dart';
-import 'package:pomodoro_timer_task_management/views/screens/project/project_page.dart';
-import 'package:pomodoro_timer_task_management/views/screens/settings/settings_page.dart';
-import 'package:pomodoro_timer_task_management/views/screens/statistics/statistics_page.dart';
-import 'package:pomodoro_timer_task_management/views/screens/timer/timer_page.dart';
+import 'package:TrailApp/core/values/colors.dart';
+import 'package:TrailApp/routes/main_navigation.dart';
+import 'package:TrailApp/routes/settings_navigation.dart';
+import 'package:TrailApp/views/screens/project/project_page.dart';
+import 'package:TrailApp/views/screens/settings/settings_page.dart';
+import 'package:TrailApp/views/screens/statistics/statistics_page.dart';
+import 'package:TrailApp/views/screens/timer/timer_page.dart';
 
 final _tabController = CupertinoTabController();
 

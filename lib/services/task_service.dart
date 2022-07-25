@@ -1,6 +1,6 @@
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:pomodoro_timer_task_management/models/project.dart';
-import 'package:pomodoro_timer_task_management/models/task.dart';
+import 'package:TrailApp/models/project.dart';
+import 'package:TrailApp/models/task.dart';
 
 class TaskService {
   final String boxName;

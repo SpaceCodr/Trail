@@ -1,14 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pomodoro_timer_task_management/components/number_picker.dart';
-import 'package:pomodoro_timer_task_management/core/values/colors.dart';
-import 'package:pomodoro_timer_task_management/core/values/constants.dart';
-import 'package:pomodoro_timer_task_management/cubit/settings_logic/settings_cubit.dart';
-import 'package:pomodoro_timer_task_management/models/pomodoro_timer.dart';
-import 'package:pomodoro_timer_task_management/views/widgets/back_button.dart';
-import 'package:pomodoro_timer_task_management/views/widgets/list_button.dart';
-import 'package:pomodoro_timer_task_management/views/widgets/page_title.dart';
-import 'package:pomodoro_timer_task_management/views/widgets/rounded_card.dart';
+import 'package:TrailApp/components/number_picker.dart';
+import 'package:TrailApp/core/values/colors.dart';
+import 'package:TrailApp/core/values/constants.dart';
+import 'package:TrailApp/cubit/settings_logic/settings_cubit.dart';
+import 'package:TrailApp/models/pomodoro_timer.dart';
+import 'package:TrailApp/views/widgets/back_button.dart';
+import 'package:TrailApp/views/widgets/list_button.dart';
+import 'package:TrailApp/views/widgets/page_title.dart';
+import 'package:TrailApp/views/widgets/rounded_card.dart';
 
 class PomodoroTimerSettingsPage extends StatelessWidget {
   const PomodoroTimerSettingsPage({Key? key}) : super(key: key);

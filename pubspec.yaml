@@ -1,4 +1,4 @@
-name: pomodoro_timer_task_management
+name: TrailApp
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -42,6 +42,8 @@ dependencies:
   just_audio: ^0.9.28
   animated_splash_screen: ^1.3.0
   flutter_phoenix: ^1.0.0
+  url_launcher: ^6.1.5
+  introduction_screen: ^3.0.2
 
 dev_dependencies:
   flutter_test:
@@ -52,13 +54,17 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
+  flutter_launcher_icons: ^0.9.3
   flutter_lints: ^2.0.1
   hive_generator: ^1.1.3
   build_runner: ^2.2.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
-
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/app.png"
 # The following section is specific to Flutter.
 flutter:
   # The following line ensures that the Material Icons font is
@@ -81,6 +87,10 @@ flutter:
     - assets/UnsplashBG.jpg
     - assets/UnsplashHomeBG.jpg
     - assets/abg.jpg
+    - assets/app.png
+    - assets/a.png
+    - assets/b.png
+    - assets/c.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -219,8 +229,8 @@ flutter_native_splash:
   #       WidgetsFlutterBinding.ensureInitialized();
   #       SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.bottom, SystemUiOverlay.top]);
   #fullscreen: true
-  
-  # If you have changed the name(s) of your info.plist file(s), you can specify the filename(s) 
+
+  # If you have changed the name(s) of your info.plist file(s), you can specify the filename(s)
   # with the info_plist_files parameter.  Remove only the # characters in the three lines below,
   # do not remove any spaces:
   #info_plist_files:

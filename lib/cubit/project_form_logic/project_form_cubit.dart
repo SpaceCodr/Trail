@@ -1,9 +1,9 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:pomodoro_timer_task_management/core/extensions/color.dart';
-import 'package:pomodoro_timer_task_management/core/values/colors.dart';
-import 'package:pomodoro_timer_task_management/models/project.dart';
-import 'package:pomodoro_timer_task_management/services/project_service.dart';
+import 'package:TrailApp/core/extensions/color.dart';
+import 'package:TrailApp/core/values/colors.dart';
+import 'package:TrailApp/models/project.dart';
+import 'package:TrailApp/services/project_service.dart';
 
 part 'project_form_state.dart';
 

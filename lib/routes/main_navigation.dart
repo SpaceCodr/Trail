@@ -1,13 +1,13 @@
 import 'package:flutter/cupertino.dart';
-import 'package:pomodoro_timer_task_management/models/project.dart';
-import 'package:pomodoro_timer_task_management/models/task.dart';
-import 'package:pomodoro_timer_task_management/views/screens/project/project_form_page.dart';
-import 'package:pomodoro_timer_task_management/views/screens/project/project_page.dart';
-import 'package:pomodoro_timer_task_management/views/screens/project_detail/project_detail_page.dart';
-import 'package:pomodoro_timer_task_management/views/screens/project_detail/project_detial_form_page.dart';
-import 'package:pomodoro_timer_task_management/views/screens/settings/settings_page.dart';
-import 'package:pomodoro_timer_task_management/views/screens/statistics/statistics_page.dart';
-import 'package:pomodoro_timer_task_management/views/screens/timer/timer_page.dart';
+import 'package:TrailApp/models/project.dart';
+import 'package:TrailApp/models/task.dart';
+import 'package:TrailApp/views/screens/project/project_form_page.dart';
+import 'package:TrailApp/views/screens/project/project_page.dart';
+import 'package:TrailApp/views/screens/project_detail/project_detail_page.dart';
+import 'package:TrailApp/views/screens/project_detail/project_detial_form_page.dart';
+import 'package:TrailApp/views/screens/settings/settings_page.dart';
+import 'package:TrailApp/views/screens/statistics/statistics_page.dart';
+import 'package:TrailApp/views/screens/timer/timer_page.dart';
 
 abstract class MainNavigationRoutes {
   MainNavigationRoutes._();

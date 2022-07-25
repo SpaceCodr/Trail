@@ -1,7 +1,7 @@
 import 'package:hive_flutter/adapters.dart';
-import 'package:pomodoro_timer_task_management/core/values/keys.dart';
-import 'package:pomodoro_timer_task_management/models/project.dart';
-import 'package:pomodoro_timer_task_management/models/task.dart';
+import 'package:TrailApp/core/values/keys.dart';
+import 'package:TrailApp/models/project.dart';
+import 'package:TrailApp/models/task.dart';
 
 class ProjectRepository {
   Future<List<Project>> getProjects(String boxName) async {

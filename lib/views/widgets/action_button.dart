@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:pomodoro_timer_task_management/core/values/colors.dart';
-import 'package:pomodoro_timer_task_management/core/values/constants.dart';
+import 'package:TrailApp/core/values/colors.dart';
+import 'package:TrailApp/core/values/constants.dart';
 
 class ActionButton extends StatelessWidget {
   const ActionButton({

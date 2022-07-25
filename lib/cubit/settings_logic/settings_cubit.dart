@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:pomodoro_timer_task_management/models/pomodoro_timer.dart';
-import 'package:pomodoro_timer_task_management/services/pomodoro_timer_storage_service.dart';
+import 'package:TrailApp/models/pomodoro_timer.dart';
+import 'package:TrailApp/services/pomodoro_timer_storage_service.dart';
 
 part 'settings_state.dart';
 
