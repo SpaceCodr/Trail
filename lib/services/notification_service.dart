@@ -9,7 +9,7 @@ class NotificationService {
 
   Future<void> init() async {
     var initializationSettingsAndriod =
-        const AndroidInitializationSettings('@drawable/ic_stat_access_alarm');
+        const AndroidInitializationSettings('@drawable/app');
     var initializationSettingsIOS = const IOSInitializationSettings(
       requestAlertPermission: false,
       requestBadgePermission: false,
@@ -30,7 +30,7 @@ class NotificationService {
         channelDescription: 'Main channel notifications',
         importance: Importance.max,
         priority: Priority.max,
-        icon: '@drawable/ic_stat_access_alarm',
+        icon: '@drawable/app',
       ),
       iOS: IOSNotificationDetails(
         sound: soundName ?? 'default.wav',

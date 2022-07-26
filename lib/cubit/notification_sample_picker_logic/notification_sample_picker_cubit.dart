@@ -49,6 +49,7 @@ class NotificationSamplePickerCubit
     String url = 'android/app/src/main/res/raw/sample${index + 1}.wav';
     await _player.setAsset(url);
     _player.play();
+    await saveSample();
   }
 
   String? _getSampleName() {
