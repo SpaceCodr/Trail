@@ -1,3 +1,4 @@
+// ignore: depend_on_referenced_packages
 import 'package:bloc/bloc.dart';
 import 'package:flutter/foundation.dart';
 import 'package:TrailApp/models/project.dart';
@@ -38,7 +39,7 @@ class StatisticsCubit extends Cubit<StatisticsState> {
     final totalWorkTime =
         task.fold<int>(0, (sum, task) => sum + task.pomodoroTimer.workTime*task.pomodoroTimer.workCycle) /
             60;
-    print(totalWorkTime);
+    //print(totalWorkTime);
     final workedTime =
         task.fold<int>(0, (sum, task) => sum + (task.workedTime ?? 0)) / 60;
 
@@ -67,7 +68,7 @@ class StatisticsCubit extends Cubit<StatisticsState> {
       return 0;
     }
 
-    return tasks.fold<int>(0, (sum, task) => sum + ((task.workedTime ?? 0)/60).toInt() )/ 60;
+    return tasks.fold<int>(0, (sum, task) => sum + (task.workedTime ?? 0)~/60 )/ 60;
   }
 
   int getProjectCompletedTaskCount(Project project) {

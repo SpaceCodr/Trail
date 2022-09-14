@@ -43,7 +43,7 @@ class ProjectDetailPage extends StatelessWidget {
       child: BlocBuilder<ProjectDetailCubit, ProjectDetailState>(
         builder: (context, state) {
           return CupertinoPageScaffold(
-            backgroundColor: Color(0xFF14162D),
+            backgroundColor: const Color(0xFF14162D),
             child: SafeArea(
               child: state is ProjectDetailLoadedState
                   ? const _Body()
@@ -293,7 +293,7 @@ class _TaskStatisticsCard extends StatelessWidget {
     return RoundedCard(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(30),
-        image: DecorationImage(
+        image: const DecorationImage(
           image: AssetImage('assets/full-bloom.png'),
           fit: BoxFit.cover,
         ),
@@ -429,8 +429,10 @@ class _TaskCard extends StatelessWidget {
     final result = await taskWorkCubit.trySetTimerTask(timerTask);
 
     if (result) {
+      // ignore: use_build_context_synchronously
       TabNavigator.navigate(context, MainNavigationRoutes.timer);
     } else {
+      // ignore: use_build_context_synchronously
       _openTimerStopModal(context);
     }
   }
@@ -474,7 +476,7 @@ class _TaskCard extends StatelessWidget {
                       Text(
                         task.title,
                         style: const TextStyle(
-                          fontFamily: 'Titlefont3',
+                          fontFamily: 'Papyrus',
                           fontSize: 18,
                           color: kTextColor,
                         ),
@@ -482,7 +484,7 @@ class _TaskCard extends StatelessWidget {
                       Text(
                         '${task.workedInterval ?? 0}/${task.pomodoroTimer.workCycle}',
                         style: const TextStyle(
-                          fontFamily: 'Titlefont3',
+                          fontFamily: 'Papyrus',
                           fontSize: 18,
                           color: kTextColor,
                         ),
@@ -494,9 +496,9 @@ class _TaskCard extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        '${((task.workedTime ?? 0)/60).toInt()} minute',
+                        '${(task.workedTime ?? 0)~/60} minute',
                         style: const TextStyle(
-                          fontFamily: 'Titlefont3',
+                          fontFamily: 'Papyrus',
                           fontSize: 18,
                           color: kGreyColor,
                         ),
@@ -504,7 +506,7 @@ class _TaskCard extends StatelessWidget {
                       Text(
                         '${task.pomodoroTimer.workTime} min',
                         style: const TextStyle(
-                          fontFamily: 'Titlefont3',
+                          fontFamily: 'Papyrus',
                           fontSize: 18,
                           color: kGreyColor,
                         ),

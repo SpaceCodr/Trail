@@ -1,3 +1,4 @@
+// ignore: depend_on_referenced_packages
 import 'package:bloc/bloc.dart';
 import 'package:TrailApp/models/pomodoro_timer.dart';
 import 'package:TrailApp/services/pomodoro_timer_storage_service.dart';

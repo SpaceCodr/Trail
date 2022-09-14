@@ -34,7 +34,7 @@ class ProjectFormPage extends StatelessWidget {
         projectKey: projectKey,
       ),
       child: CupertinoPageScaffold(
-        backgroundColor: Color(0xFF14162D),
+        backgroundColor: const Color(0xFF14162D),
         child: SafeArea(
           child: Stack(
             children: const [
@@ -92,6 +92,7 @@ class _DeleteProjectButton extends StatelessWidget {
       title: 'Are you sure delete project?',
       onConiform: () async {
         await cubit.deleteProject();
+        // ignore: use_build_context_synchronously
         Navigator.of(context)
             .pushReplacementNamed(MainNavigationRoutes.projects);
       },
@@ -148,12 +149,12 @@ class _ProjectNameField extends StatelessWidget {
         ),
         padding: EdgeInsets.zero,
         placeholderStyle: const TextStyle(
-          fontFamily: 'Titlefont5',
+          fontFamily: 'Papyrus',
           fontSize: 18,
           color: Colors.grey,
         ),
         style: const TextStyle(
-          fontFamily: 'Titlefont5',
+          fontFamily: 'Papyrus',
           fontSize: 18,
           color: kTextColor,
         ),
@@ -273,6 +274,7 @@ class _ActionButton extends StatelessWidget {
           final canBack = await action.call();
 
           if (canBack) {
+            // ignore: use_build_context_synchronously
             Navigator.of(context).pop();
           }
         },

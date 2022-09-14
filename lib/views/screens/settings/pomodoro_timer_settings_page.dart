@@ -177,7 +177,7 @@ class _NumberPickerCard extends StatelessWidget {
             Text(
               title,
               style: const TextStyle(
-                fontFamily: 'Titlefont2',
+                fontFamily: 'Papyrus',
                 fontSize: 18,
                 color: kTextColor,
               ),
@@ -186,7 +186,7 @@ class _NumberPickerCard extends StatelessWidget {
             Text(
               '$value',
               style: const TextStyle(
-                fontFamily: 'Titlefont1',
+                fontFamily: 'Papyrus',
                 fontSize: 55,
                 color: kTextColor,
               ),
@@ -195,7 +195,7 @@ class _NumberPickerCard extends StatelessWidget {
             Text(
               subTitle,
               style: const TextStyle(
-                fontFamily: 'Titlefont3',
+                fontFamily: 'Papyrus',
                 fontSize: 16,
                 color: kGreyColor,
               ),

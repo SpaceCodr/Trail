@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:TrailApp/core/values/colors.dart';
 import 'package:TrailApp/routes/main_navigation.dart';
 import 'package:TrailApp/routes/settings_navigation.dart';
 import 'package:TrailApp/views/screens/project/project_page.dart';

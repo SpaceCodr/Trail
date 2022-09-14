@@ -21,7 +21,7 @@ void main() async {
   await insertDefaultData();
   await NotificationService.instance.init();
   FlutterNativeSplash.remove();
-  runApp(Phoenix(child:StartApp()));
+  runApp(Phoenix(child:const StartApp()));
 }
 
 class StartApp extends StatelessWidget {

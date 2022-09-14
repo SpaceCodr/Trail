@@ -80,7 +80,7 @@ class _NumberPickerState extends State<_NumberPicker> {
                   Text(
                     '$_value',
                     style: const TextStyle(
-                      fontFamily: 'Titlefont1',
+                      fontFamily: 'Papyrus',
                       fontSize: 55,
                       color: kTextColor,
                       fontWeight: FontWeight.w800,
@@ -131,7 +131,7 @@ class _Button extends StatelessWidget {
       child: Text(
         title,
         style: const TextStyle(
-          fontFamily: 'Titlefont1',
+          fontFamily: 'Papyrus',
           fontSize: 20,
           color: kTextColor,
           fontWeight: FontWeight.bold,

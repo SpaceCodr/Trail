@@ -1,3 +1,4 @@
+// ignore: depend_on_referenced_packages
 import 'package:bloc/bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:TrailApp/core/values/keys.dart';

@@ -37,7 +37,7 @@ class ProjectDetailFormPage extends StatelessWidget {
         task: task,
       )..init(),
       child: CupertinoPageScaffold(
-        backgroundColor: Color(0xFF14162D),
+        backgroundColor: const Color(0xFF14162D),
         child: SafeArea(
           child: ListView(
             children: const [
@@ -88,6 +88,7 @@ class _DeleteButton extends StatelessWidget {
       title: 'Are you sure you want to delete this task?',
       onConiform: () async {
         await cubit.deleteTask();
+        // ignore: use_build_context_synchronously
         Navigator.of(context).pop();
       },
     );
@@ -137,7 +138,7 @@ class _TaskNameField extends StatelessWidget {
         padding: EdgeInsets.zero,
         placeholder: 'Task name',
         style: const TextStyle(
-          fontFamily: 'Titlefont5',
+          fontFamily: 'Papyrus',
           fontSize: 18,
           color: kTextColor,
         ),
@@ -384,7 +385,7 @@ class _NumberPickerCard extends StatelessWidget {
             Text(
               title,
               style: const TextStyle(
-                fontFamily: 'Titlefont2',
+                fontFamily: 'Papyrus',
                 fontSize: 18,
                 color: kTextColor,
               ),
@@ -393,7 +394,7 @@ class _NumberPickerCard extends StatelessWidget {
             Text(
               '$value',
               style: const TextStyle(
-                fontFamily: 'Titlefont1',
+                fontFamily: 'Papyrus',
                 fontSize: 55,
                 color: kTextColor,
               ),
@@ -402,7 +403,7 @@ class _NumberPickerCard extends StatelessWidget {
             Text(
               subTitle,
               style: const TextStyle(
-                fontFamily: 'Titlefont3',
+                fontFamily: 'Papyrus',
                 fontSize: 16,
                 color: kGreyColor,
               ),
@@ -486,6 +487,7 @@ class _TaskActionButton extends StatelessWidget {
         final canBack = await action.call();
 
         if (canBack) {
+          // ignore: use_build_context_synchronously
           Navigator.of(context).pop();
         }
       },

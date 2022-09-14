@@ -36,16 +36,16 @@ class ActionButton extends StatelessWidget {
       onPressed: onPressed,
       childAlignment: childAlignment,
       color: color,
+      margin: margin,
+      padding: padding,
       child: Text(
         title,
         style: TextStyle(
-          fontFamily: 'Titlefont2',
+          fontFamily: 'Papyrus',
           fontSize: 18,
           color: titleColor ?? kWhiteColor,
         ),
       ),
-      margin: margin,
-      padding: padding,
     );
   }
 

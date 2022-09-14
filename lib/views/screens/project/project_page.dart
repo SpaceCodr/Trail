@@ -23,7 +23,7 @@ class ProjectsPage extends StatelessWidget {
     return BlocProvider(
       create: (_) => ProjectCubit()..init(),
       child: CupertinoPageScaffold(
-        backgroundColor: Color(0xFF14162D),
+        backgroundColor: const Color(0xFF14162D),
         child: SafeArea(
           child: BlocBuilder<ProjectCubit, ProjectState>(
             builder: (context, state) {
@@ -141,9 +141,11 @@ class _ProjectList extends StatelessWidget {
   void _openDetailPage(BuildContext context, Project project) async {
     final box = await Hive.openBox<Project>(kProjectBox);
     final projects =
+        // ignore: use_build_context_synchronously
         (context.read<ProjectCubit>().state as ProjectLoaded).projects;
     final projectKey = box.keyAt(projects.indexOf(project)) as int;
 
+    // ignore: use_build_context_synchronously
     Navigator.of(context).pushNamed(
       MainNavigationRoutes.projectDetail,
       arguments: {
@@ -215,12 +217,12 @@ class _ProjectAddButton extends StatelessWidget {
       childAlignment: Alignment.centerLeft,
       child: Row(
         mainAxisSize: MainAxisSize.min,
-        children: [
+        children: const [
           Icon(
             CupertinoIcons.add,
             color: kBlueColor,
           ),
-          const SizedBox(width: kDefaultMargin / 2),
+          SizedBox(width: kDefaultMargin / 2),
           Text(
             'Add Project',
             style: TextStyle(

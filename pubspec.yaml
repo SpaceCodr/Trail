@@ -44,6 +44,7 @@ dependencies:
   flutter_phoenix: ^1.0.0
   url_launcher: ^6.1.5
   introduction_screen: ^3.0.2
+  shake: ^2.1.0
 
 dev_dependencies:
   flutter_test:
@@ -114,24 +115,7 @@ flutter:
     - family: Lato-Regular
       fonts:
         - asset: fonts/Lato-Regular.ttf
-    - family: Titlefont1
-      fonts:
-            - asset: assets/fonts/Pacifico-Regular.ttf
-    - family: Titlefont2
-      fonts:
-            - asset: assets/fonts/LuckiestGuy-Regular.ttf
-    - family: Titlefont3
-      fonts:
-            - asset: assets/fonts/Lobster-Regular.ttf
-    - family: Titlefont4
-      fonts:
-            - asset: assets/fonts/DancingScript-VariableFont_wght.ttf
-    - family: Titlefont5
-      fonts:
-            - asset: assets/fonts/BerkshireSwash-Regular.ttf
-    - family: Titlefont6
-      fonts:
-            - asset: assets/fonts/Bangers-Regular.ttf
+    
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

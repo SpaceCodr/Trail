@@ -1,3 +1,4 @@
+// ignore: depend_on_referenced_packages
 import 'package:bloc/bloc.dart';
 import 'package:flutter/foundation.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -44,7 +45,7 @@ class ProjectDetailCubit extends Cubit<ProjectDetailState> {
     final totalWorkTime =
         tasks.fold<int>(0, (sum, task) => sum + task.pomodoroTimer.workTime*task.pomodoroTimer.workCycle) /
             60;
-    print(totalWorkTime);
+    //print(totalWorkTime);
     final workedTime =
         tasks.fold<int>(0, (sum, task) => sum + (task.workedTime ?? 0)) / 60;
     final completedTaskCount =

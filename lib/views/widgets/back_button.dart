@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:TrailApp/core/values/colors.dart';
 
+// ignore: camel_case_types
 class Back_Button extends StatelessWidget {
   const Back_Button({
     Key? key,
@@ -21,12 +21,12 @@ class Back_Button extends StatelessWidget {
       child: CupertinoButton(
         minSize: 0,
         padding: EdgeInsets.zero,
+        onPressed: Navigator.of(context).pop,
         child: const Icon(
           CupertinoIcons.chevron_back,
           color: Colors.orange,
           size: 25,
         ),
-        onPressed: Navigator.of(context).pop,
       ),
     );
   }

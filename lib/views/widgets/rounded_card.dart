@@ -23,12 +23,12 @@ class RoundedCard extends StatelessWidget {
   }) {
     return RoundedCard(
       key: key,
-      child: child,
       margin: const EdgeInsets.only(
         left: kDefaultMargin,
         right: kDefaultMargin,
         bottom: kDefaultMargin * 1.2,
       ),
+      child: child,
     );
   }
 

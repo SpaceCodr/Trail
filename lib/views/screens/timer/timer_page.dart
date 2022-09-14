@@ -17,6 +17,8 @@ import 'package:TrailApp/themes/timer_slider_themes.dart';
 import 'package:TrailApp/views/widgets/action_button.dart';
 import 'dart:io' show Platform;
 
+import 'package:shake/shake.dart';
+
 class TimerPage extends StatefulWidget {
   const TimerPage({Key? key}) : super(key: key);
 
@@ -28,6 +30,10 @@ class _TimerPageState extends State<TimerPage> {
   @override
   void initState() {
     super.initState();
+    ShakeDetector detector= ShakeDetector.waitForStart(
+        onPhoneShake: ()=>Phoenix.rebirth(context),
+    );
+    detector.startListening();
     final timerCubit = context.read<TimerCubit>();
     final taskWorkCubit = context.read<TaskWorkCubit>();
     final task = taskWorkCubit.state.task;
@@ -43,7 +49,7 @@ class _TimerPageState extends State<TimerPage> {
     return CupertinoPageScaffold(
       child: SafeArea(
         child:Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             // color: Color(0xFF14162D),
             gradient: LinearGradient(
               begin: Alignment.topCenter,
@@ -55,7 +61,7 @@ class _TimerPageState extends State<TimerPage> {
               fit: BoxFit.fitWidth,
             ),
           ),
-          child: _NotificationService(
+          child: const _NotificationService(
             child: _Body(),
          ),
         ),
@@ -143,10 +149,10 @@ class _Body extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children:  [
-        _TaskCardBody(),
-        _TimerBody(),
-        _TimerActionButton(),
-        Padding(padding: EdgeInsets.all(140),child:Align(alignment: Alignment.topCenter,child: CupertinoButton(child: Icon(Icons.refresh_rounded,color: kOrangeColor,size: 40,),
+        const _TaskCardBody(),
+        const _TimerBody(),
+        const _TimerActionButton(),
+        Padding(padding: const EdgeInsets.all(140),child:Align(alignment: Alignment.topCenter,child: CupertinoButton(child: const Icon(Icons.refresh_rounded,color: kOrangeColor,size: 40,),
           onPressed: () => Phoenix.rebirth(context),
         ))),
       ],
@@ -226,7 +232,7 @@ class _TaskCard extends StatelessWidget {
                     Text(
                       task.title,
                       style: const TextStyle(
-                        fontFamily: 'Titlefont3',
+                        fontFamily: 'Papyrus',
                         fontSize: 18,
                         color: kTextColor,
                       ),
@@ -234,7 +240,7 @@ class _TaskCard extends StatelessWidget {
                     Text(
                       '${task.workedInterval ?? 0}/${task.pomodoroTimer.workCycle}',
                       style: const TextStyle(
-                        fontFamily: 'Titlefont3',
+                        fontFamily: 'Papyrus',
                         fontSize: 18,
                         color: kTextColor,
                       ),
@@ -246,9 +252,9 @@ class _TaskCard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      '${((task.workedTime ?? 0)/60).toInt()} minute',
+                      '${(task.workedTime ?? 0)~/60} minute',
                       style: const TextStyle(
-                        fontFamily: 'Titlefont3',
+                        fontFamily: 'Papyrus',
                         fontSize: 18,
                         color: kGreyColor,
                       ),
@@ -256,7 +262,7 @@ class _TaskCard extends StatelessWidget {
                     Text(
                       '${task.pomodoroTimer.workTime} min',
                       style: const TextStyle(
-                        fontFamily: 'Titlefont3',
+                        fontFamily: 'Papyrus',
                         fontSize: 18,
                         color: kGreyColor,
                       ),

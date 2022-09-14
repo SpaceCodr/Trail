@@ -19,7 +19,7 @@ class StatisticsPage extends StatelessWidget {
     return BlocProvider<StatisticsCubit>(
       create: (context) => StatisticsCubit()..init(),
       child: CupertinoPageScaffold(
-        backgroundColor: Color(0xFF14162D),
+        backgroundColor: const Color(0xFF14162D),
         child: SafeArea(child: BlocBuilder<StatisticsCubit, StatisticsState>(
           builder: (context, state) {
             if (state is StatisticsLoadedState) {
@@ -222,7 +222,7 @@ class _Diagram extends StatelessWidget {
 
     final workValue =
         state.workedTime / (state.totalWorkTime == 0 ? 1 : state.totalWorkTime);
-    print(workValue);
+    //print(workValue);
     final projectValue = state.completedProjectCount /
         (state.totalProjectCount == 0 ? 1 : state.totalProjectCount);
     final taskValue = state.completedTaskCount /

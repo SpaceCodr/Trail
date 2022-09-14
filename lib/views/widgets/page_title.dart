@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:TrailApp/core/values/constants.dart';
 
@@ -40,7 +39,7 @@ class PageTitle extends StatelessWidget {
         title,
         style: const TextStyle(
           fontSize: 24,
-          fontFamily: 'Titlefont1',
+          fontFamily: 'Papyrus',
           fontWeight: FontWeight.w800,
           color: Colors.orange,
         ),

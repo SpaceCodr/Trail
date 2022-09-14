@@ -1,5 +1,6 @@
 import 'dart:async';
 
+// ignore: depend_on_referenced_packages
 import 'package:bloc/bloc.dart';
 import 'package:TrailApp/core/ticker.dart';
 import 'package:TrailApp/cubit/timer_logic/timer_event.dart';

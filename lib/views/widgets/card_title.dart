@@ -46,7 +46,7 @@ class CardTitle extends StatelessWidget {
             title,
             style: const TextStyle(
               fontSize: 24,
-              fontFamily: 'Titlefont1',
+              fontFamily: 'Papyrus',
               color: kOrangeColor,
             ),
           ),

@@ -1,3 +1,4 @@
+// ignore: depend_on_referenced_packages
 import 'package:bloc/bloc.dart';
 import 'package:hive/hive.dart';
 import 'package:TrailApp/cubit/timer_logic/timer_cubit.dart';

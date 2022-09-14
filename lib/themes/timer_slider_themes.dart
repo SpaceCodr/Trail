@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:TrailApp/core/values/colors.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
 
 abstract class _TimerSliderWidget extends StatelessWidget {

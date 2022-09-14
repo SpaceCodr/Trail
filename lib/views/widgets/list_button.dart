@@ -120,7 +120,7 @@ class ListButton extends StatelessWidget {
               child: Text(
                 title,
                 style: TextStyle(
-                  fontFamily: 'Titlefont3',
+                  fontFamily: 'Papyrus',
                   fontSize: 18,
                   color: titleColor ?? CupertinoColors.white,
                 ),

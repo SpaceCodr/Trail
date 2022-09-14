@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:TrailApp/core/values/colors.dart';
 import 'package:TrailApp/core/values/constants.dart';
 import 'package:TrailApp/core/values/keys.dart';
 import 'package:TrailApp/cubit/settings_logic/settings_cubit.dart';
@@ -24,7 +23,7 @@ class SettingsPage extends StatelessWidget {
         ),
       ],
       child: CupertinoPageScaffold(
-        backgroundColor: Color(0xFF14162D),
+        backgroundColor: const Color(0xFF14162D),
         child: SafeArea(
           child: ListView(
             shrinkWrap: true,
@@ -164,10 +163,12 @@ class _AboutCard extends StatelessWidget {
     );
   }
   void _launchEmail() async {
+    // ignore: no_leading_underscores_for_local_identifiers
     final Uri _emailUri= Uri(scheme: 'mailto',path: 'umerbinshah2001@gmail.com');
     launchUrl(_emailUri);
   }
   void _launchUrl() async {
+    // ignore: no_leading_underscores_for_local_identifiers
     final Uri _url = Uri.parse('https://github.com/SpaceCodr/TrailBloc2');
     if (!await launchUrl(_url)) {
       throw 'Could not launch$_url';
